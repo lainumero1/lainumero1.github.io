@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href='../static/bootstrap.css'>
+    <link rel="stylesheet" href='../static/base.css'>
+    <script type="module" src="../static/base.js"></script>
+    <script type="module" src="../static/theme_module.js"></script>
+    <link rel="stylesheet" href='../static/settings.css'>
+    <script type="module" src="../static/settings.js"></script>
+    <title>Settings</title>
+</head>
+
+    <body>
+        <div class="row" id="topbar" style="margin-left: 0px">
+            <div  class="side-button">
+                <button id="side-button" class="side-button">≡</button>
+            </div>
+            <div  class="topic">
+                <h2 id="topic" class="topic"><a href="../home">Alan's page</a></h2>
+            </div>
+            <input type="text" placeholder="Search" id="search-button" class="col-sm">
+        </div>
+        <div id="sidebar" class="sidebar">
+            <a href="../me">About</a>
+            <a href="../applist">Works</a>
+            <a href="../settings">Settings</a>
+            <a href="../developers">More</a>
+        </div>
+        
+        <div id="main" style="display: block">
+            <div class="checkbox-list">
+                <label for="light-dark">Dark Mode: </label>
+                <input type="checkbox" id="light-dark" name="light-dark">
+           </div>
+        </div>
+    
+    </body>
+</html>

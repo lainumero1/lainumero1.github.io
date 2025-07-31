@@ -1,0 +1,22 @@
+#app-list a {
+    text-decoration: none;
+    /* color: #424242; */
+}
+
+.app-description {
+    color: #424242;
+}
+
+img.cover {
+    height: 15%;
+    width: 15%;
+    /* margin-top: 50px; */
+    margin-right: 10px;
+}
+
+.list-item {
+    width: auto;
+    margin: 15px;
+    padding: 0.5rem;
+    /* background-color: #676767; */
+}

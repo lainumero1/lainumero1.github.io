@@ -1,0 +1,77 @@
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 225px;
+    width: auto;
+    padding: 15px;
+    margin-top: -22px;
+    color: grey;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 0 0 0;
+    text-decoration: none;
+    user-select: none;
+}
+
+.prev:hover, .next:hover, .number-text {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.next {
+    right: 0;
+}
+
+.number-text {
+    color: lightgray;
+    font-size: 15px;
+    padding: 8px 12px;
+    width: 55px;
+    /* position: absolute; */
+    top: 48px;
+}
+
+.image-text, .image-text a {
+    text-align: center;
+    font-size: 20px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #818181;
+}
+
+#app-list a {
+    text-decoration: none;
+    color: #818181;
+}
+
+img.cover {
+    height: 25%;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+/* animation */
+
+/* @keyframes slide {
+    from {top: 0;}
+    to {top: 100px;}
+} */
+ 
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+.app-slides {
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+#app-slideshow {
+    padding-bottom: 50px;
+}
