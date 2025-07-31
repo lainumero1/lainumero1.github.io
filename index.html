@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href='../static/bootstrap.css'>
+    <link rel="stylesheet" href='../static/base.css'>
+    <script type="module" src="../static/base.js"></script>
+    <script type="module" src="../static/theme_module.js"></script>
+    <!-- {% block head %} -->
+    <link rel="stylesheet" href='../static/home.css'>
+    <script src="../static/home.js"></script>
+    <title>Alan's page</title>
+    <!-- {% endblock %} -->
+</head>
+
+{% load static %}
+    <body>
+        <div class="row" id="topbar" style="margin-left: 0px">
+            <div  class="side-button">
+                <button id="side-button" class="side-button">≡</button>
+            </div>
+            <div  class="topic">
+                <h2 id="topic" class="topic"><a href="../home">Alan's page</a></h2>
+            </div>
+            <input type="text" placeholder="Search" id="search-button" class="col-sm">
+        </div>
+        <div id="sidebar" class="sidebar">
+            <a href="../me">About</a>
+            <a href="../applist">Works</a>
+            <a href="../settings">Settings</a>
+            <a href="../developers">More</a>
+        </div>
+        
+        <div id="main" style="display: block">
+            <!-- {% block var %} -->
+            <div id="app-slideshow">
+                {% for app in names %}
+                    <div class="app-slides">
+                        <div class="number-text">
+                            {{ forloop.counter }} / {{ names|length }}
+                        </div>
+                        <a href="../app/?name={{ app|join:'-' }}"><img class="cover" src="../static/content_app/{{ app|join:'-' }}/128.png"></a>
+                        <div class="image-text"><a href="../app/?name={{ app|join:'-' }}">{{ app|join:' '}}</a></div>
+                    </div>
+                {% endfor %}
+                <a id="prev-slide" class="prev" onclick="switchSlide(-1)">&#10094;</a>
+                <a id="next-slide" class="next" onclick="switchSlide(+1)">&#10095;</a>
+            </div>
+            <br>
+            <ul id="app-list">
+                {% for app in names %}
+                    <li><a href="../app/?name={{ app|join:'-' }}">{{ app|join:' ' }}</a></li>
+                {% endfor %}
+            </ul>
+            <!-- {% endblock %} -->
+        </div>
+    
+    </body>
+</html>
+<!-- {% extends 'base.html' %} -->
+<!-- {% load static %} -->
+
+
+
