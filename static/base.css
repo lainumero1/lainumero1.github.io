@@ -41,16 +41,6 @@
     width: 10%;
 }
 
-.topic {
-    width: 65%;
-}
-
-
-.dark-mode {
-    width: 25%;
-    text-align: end;
-}
-
 #topic a, .side-button {
     color: #818181;
     text-decoration: none;
@@ -91,19 +81,32 @@
 
 
 #topic {
-    text-align: center;
+    text-align: end;
     margin-top: 0.5rem;
     margin-bottom: 0.2rem;
 }
 
-@media only screen and (max-width: 575px) {
+@media (max-width: 575px) {
     .dark-mode {
-        width: 100%;
+        width: 35%;
+        text-align: end;
     }
     .topic {
-        width: 85%;
+        width: 45%;
+        margin-left: 1.5rem;
     }
     #main {
         margin-top: 75px;
+    }
+}
+
+@media (min-width: 576px) {
+    .topic {
+        width: 60%;
+        text-align: end;
+    }   
+    .dark-mode {
+        width: 30%;
+        text-align: end;
     }
 }
