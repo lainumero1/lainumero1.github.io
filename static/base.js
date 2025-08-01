@@ -1,20 +1,6 @@
 let sidebarStatus = false
 const sidebar = document.querySelector('#sidebar')
 const sideButton = document.querySelector('#side-button');
-// import { themeDark } from "./theme_module";
-//
-// if (themeDark === true){
-//     darkMode()
-//     themeDark = true
-// }
-// else {
-//     lightMode()
-//     themeDark = false
-// }
-
-// if (window.innerWidth <= 770) {
-//     document.getElementById("topbar").css('width', window.innerWidth)
-// }
 
 document.addEventListener('click', e => {
     if (sideButton.contains(e.target)) {
