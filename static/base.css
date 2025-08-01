@@ -87,12 +87,17 @@
 }
 
 @media (max-width: 575px) {
+    #topic {
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 0.2rem;
+    }
     .dark-mode {
-        width: 35%;
-        text-align: end;
+        width: 20%;
+        text-align: center;
     }
     .topic {
-        width: 45%;
+        width: 60%;
         margin-left: 1.5rem;
     }
     #main {
@@ -121,9 +126,18 @@
         display: block;
         transition: height 0.5s;
     }
+    #dark-icon {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @media (min-width: 576px) {
+    #topic {
+        text-align: end;
+        margin-top: 0.5rem;
+        margin-bottom: 0.2rem;
+    }
     .topic {
         width: 60%;
         text-align: end;
