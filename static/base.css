@@ -126,10 +126,6 @@
         display: block;
         transition: height 0.5s;
     }
-    #dark-icon {
-        width: 25px;
-        height: 25px;
-    }
 }
 
 @media (min-width: 576px) {

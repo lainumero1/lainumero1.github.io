@@ -71,6 +71,10 @@ input:checked + .slider:before {
         -ms-transform: translateX(18px);
         transform: translateX(18px);
     }
+    #dark-icon {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @media (min-width: 576px) {
