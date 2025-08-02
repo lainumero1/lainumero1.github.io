@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("dark-mode").addEventListener("change", function() {
         if (this.checked) {
             darkMode()
-            console.log("checked")
         }
         else{
             lightMode()
@@ -53,6 +52,7 @@ function lightMode() {
     localStorage.setItem("scheme", "light")
     document.querySelector('html').style.backgroundColor = "white"
     document.getElementById('main').style.backgroundColor = "white"
+    document.getElementById('main').style.color = "#555555"
     let text = document.querySelectorAll("label")
     for (let i = 0; i < text.length; i++) {
         text[i].style.color = "#818181"

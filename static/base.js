@@ -1,6 +1,8 @@
 let sidebarStatus = false
 const sidebar = document.querySelector('#sidebar')
 const sideButton = document.querySelector('#side-button');
+const identity = document.getElementsByClassName('identity')
+let currentIdentity = 0
 
 document.addEventListener('click', e => {
     if (sideButton.contains(e.target)) {
@@ -43,3 +45,20 @@ document.addEventListener('click', e => {
         }
     }
 })
+
+function fluidIdentity() {
+    identity[currentIdentity].style.display = "inline"
+    for (let i = 0; i < identity.length; i++) {
+        if (i !== currentIdentity) {
+            identity[i].style.display = "none"
+        }
+    }
+    if (currentIdentity < identity.length-1) {
+        currentIdentity = currentIdentity + 1
+    }
+    else {
+        currentIdentity = 0
+    }
+}
+document.addEventListener("DOMContentLoaded", fluidIdentity)
+setInterval(fluidIdentity, 2000);
