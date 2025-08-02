@@ -1,106 +1,161 @@
-#topbar {
-    background-color: black;
-    transition: margin-left 0.5s;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-}
-
-/* @media (min-width: 400px) {
-    .side-button {
-        flex: 0 0 auto;
-        width: 8.33333333%;
-    }
-    .topic {
-        flex: 0 0 auto;
-        width: 66.66666667%;
-    }
-} */
-
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: width 0.5s;
-    padding-top: 60px;
-}
-
 .side-button {
     border: none;
     background-color: inherit;
     font-size: 30px;
     cursor: pointer;
     display: inline-block;
-    width: 10%;
+    width: 5%;
 }
 
-#topic a, .side-button {
+#topic, .side-button {
     color: #818181;
     text-decoration: none;
 }
 
-#topic a {
+#topic {
     font-size: 25px;
-}
-
-/*input[type="text"] {*/
-/*    background-color: #323232;*/
-/*}*/
-
-.sidebar a{
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: width 0.5s;
 }
 
 #main {
-    transition: margin-left 0.5s;
-    margin-top: 50px;
-    /* position: absolute; */
-    width: 100%;
-    min-height: -webkit-fill-available;
-    background-color: transparent;
-    /* height: 100%; */
-    /* height: -webkit-fill-available; */
+    display: block;
 }
-
 
 .row {
     margin: 0px;
 }
 
+footer {
+    text-align: center;
+}
 
-#topic {
-    text-align: end;
-    margin-top: 0.5rem;
-    margin-bottom: 0.2rem;
+#myImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+/* #name {
+    font-size: large;
+} */
+
+.intro {
+    text-align: center;
+}
+
+.identity {
+    font-family: monospace;
+}
+
+@media (max-width: 280px) {
+    .dark-mode {
+        display: none;
+    }
 }
 
 @media (max-width: 575px) {
-    .dark-mode {
-        width: 35%;
-        text-align: end;
-    }
-    .topic {
-        width: 45%;
-        margin-left: 1.5rem;
+    #topbar {
+        background-color: black;
+        transition: margin-top 0.5s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        height: 12vh;
     }
     #main {
-        margin-top: 75px;
+        transition: margin-top 0.5s;
+        margin-top: 12vh;
+        width: 100%;
+        min-height: -webkit-fill-available;
+        background-color: transparent;
+        padding: 0 15px;
+    }
+    .sidebar {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        background-color: #111;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+    .sidebar a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: height 0.5s;
+    }
+
+    #topic {
+        text-align: center;
+        margin-top: 2vh;
+        margin-bottom: 0.2rem;
+    }
+    .dark-mode {
+        width: 20%;
+        padding-top: 2vh;
+        text-align: center;
+    }
+    .topic {
+        width: 50%;
+        margin-left: 1.5rem;
+    }
+    .homepage {
+        width: 10%;
+    }
+    #home-icon {
+        width: 40px;
+        height: 40px;
     }
 }
 
+
 @media (min-width: 576px) {
+    #topbar {
+        background-color: black;
+        transition: margin-left 0.5s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+    }
+    #main {
+        transition: margin-left 0.5s;
+        margin-top: 12vh;
+        width: 100%;
+        min-height: -webkit-fill-available;
+        background-color: transparent;
+        padding: 0 25px;
+    }
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: width 0.5s;
+        padding-top: 60px;
+    }
+    .sidebar a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: width 0.5s;
+    }
+
+    #topic {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
     .topic {
         width: 60%;
         text-align: end;
@@ -108,5 +163,18 @@
     .dark-mode {
         width: 30%;
         text-align: end;
+    }
+    .homepage {
+        width: 5%;
+        text-align: end;
+    }
+    #home-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    #dark-icon {
+        width: 50px;
+        height: 50px;
     }
 }
