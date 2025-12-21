@@ -50,6 +50,10 @@ footer {
     text-indent: 15px;
 }
 
+.detail-container {
+    border-radius: 20px;
+}
+
 @media (max-width: 280px) {
     .dark-mode {
         display: none;
@@ -129,7 +133,7 @@ footer {
     }
     #main {
         transition: margin-left 0.5s;
-        margin-top: 12vh;
+        margin-top: 5%;
         width: 100%;
         min-height: -webkit-fill-available;
         background-color: transparent;

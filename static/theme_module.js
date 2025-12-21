@@ -39,6 +39,10 @@ function darkMode() {
     document.querySelector('html').style.backgroundColor = "#323232"
     document.getElementById('main').style.backgroundColor = "#323232"
     document.getElementById('main').style.color = "#bbbbbb"
+    let container = document.getElementsByClassName("detail-container")
+    for (let i = 0; i < container.length; i++) {
+        container[i].style.backgroundColor = "dimgray"
+    }
     let text = document.querySelectorAll("label")
     for (let i = 0; i < text.length; i++) {
         text[i].style.color = "#818181"
@@ -53,6 +57,10 @@ function lightMode() {
     document.querySelector('html').style.backgroundColor = "white"
     document.getElementById('main').style.backgroundColor = "white"
     document.getElementById('main').style.color = "#555555"
+    let container = document.getElementsByClassName("detail-container")
+    for (let i = 0; i < container.length; i++) {
+        container[i].style.backgroundColor = "rgb(187, 187, 187)"
+    }
     let text = document.querySelectorAll("label")
     for (let i = 0; i < text.length; i++) {
         text[i].style.color = "#818181"
