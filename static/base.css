@@ -52,6 +52,7 @@ footer {
 
 .detail-container {
     border-radius: 20px;
+    padding: 15px;
 }
 
 @media (max-width: 280px) {
