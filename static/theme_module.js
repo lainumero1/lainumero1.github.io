@@ -43,7 +43,7 @@ function darkMode() {
     for (let i = 0; i < container.length; i++) {
         container[i].style.backgroundColor = "dimgray"
     }
-    let text = document.querySelectorAll("label")
+    let text = document.querySelectorAll("label, .detail-container>a")
     for (let i = 0; i < text.length; i++) {
         text[i].style.color = "#818181"
     }
@@ -61,7 +61,7 @@ function lightMode() {
     for (let i = 0; i < container.length; i++) {
         container[i].style.backgroundColor = "rgb(187, 187, 187)"
     }
-    let text = document.querySelectorAll("label")
+    let text = document.querySelectorAll("label, .detail-container>a")
     for (let i = 0; i < text.length; i++) {
         text[i].style.color = "#818181"
     }
