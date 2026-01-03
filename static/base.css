@@ -79,7 +79,7 @@ footer {
     }
     #main {
         transition: margin-top 0.5s;
-        margin-top: 10vh;
+        margin-top: 8vh;
         width: 100%;
         min-height: -webkit-fill-available;
         background-color: transparent;
