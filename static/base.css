@@ -34,9 +34,13 @@ footer {
     border-radius: 50px;
 }
 
-/* #name {
-    font-size: large;
-} */
+#apps {
+    padding: 0.5rem;
+}
+
+.app-description {
+    text-decoration: none;
+}
 
 .intro {
     text-align: center;
