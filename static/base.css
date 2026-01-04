@@ -35,7 +35,7 @@ footer {
 }
 
 #apps {
-    padding: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 .app-description {
@@ -163,6 +163,7 @@ footer {
         overflow-x: hidden;
         transition: width 0.5s;
         padding-top: 8%;
+        white-space: nowrap;
     }
     .sidebar a{
         padding: 8px 8px 8px 32px;
