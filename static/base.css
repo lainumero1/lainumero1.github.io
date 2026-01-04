@@ -39,8 +39,11 @@ footer {
 }
 
 .app-description {
-    text-decoration: none;
     white-space: pre-line;
+}
+
+.detail-container a {
+    font-weight: bold;
 }
 
 .intro {
