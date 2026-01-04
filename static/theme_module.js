@@ -59,7 +59,7 @@ function lightMode() {
     document.getElementById('main').style.color = "#555555"
     let container = document.getElementsByClassName("detail-container")
     for (let i = 0; i < container.length; i++) {
-        container[i].style.backgroundColor = "rgb(187, 187, 187)"
+        container[i].style.backgroundColor = "lightgrey"
     }
     let text = document.querySelectorAll("label, .app-description")
     for (let i = 0; i < text.length; i++) {
