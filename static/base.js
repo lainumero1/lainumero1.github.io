@@ -8,7 +8,7 @@ document.addEventListener('click', e => {
     if (sideButton.contains(e.target)) {
         if (sidebarStatus === false) {
             if (window.innerWidth <= 575) {
-                document.getElementById("sidebar").style.height = "32%"
+                document.getElementById("sidebar").style.height = "13.5rem"
                 document.getElementById("sidebar").style.width = "100%"
             }
             else {
